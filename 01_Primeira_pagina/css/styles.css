@@ -1,0 +1,264 @@
+:root {
+    --back-head-blok: linear-gradient(90deg, #393840, #535263);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: var(--back-head-blok);
+}
+
+header img {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #89d812;
+}
+.hall {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    transition: all 0.3s;   
+}
+.hall span{
+    width: 30px;
+    height: 2px;
+    background: #000;
+}
+.hall:hover{
+    cursor: pointer;
+    background-color: rgb(36, 154, 173);
+    border: none;
+}
+section {
+    max-width: 80vw;
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#historia,
+#elementos,
+#alem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+main,footer{
+    padding: 10px;
+}
+section .content {
+    direction: ltr;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #393840;
+    text-align: center;
+}
+
+/* Estilo base das imagens - começam invisíveis */
+section img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(20px 20px 50px #393840);
+    opacity: 0; /* Invisível até a animação ser ativada */
+}
+
+/* Animações ativadas pela classe 'animate' */
+#home img.animate {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+#historia img.animate {
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+#fundamentos img.animate {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+#elementos img.animate {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+#semantica img.animate {
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+#alem img.animate {
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+/* Definições das animações */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background: var(--back-head-blok);
+    color: #fff;
+}
+
+footer h3 {
+    color: #f1f1f1;
+}
+
+footer .lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+footer .lists ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .lists ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+footer .lists ul li a:hover {
+    color: #89d812;
+}
+
+@media screen and (max-width: 900px) {
+    #home,
+    #historia,
+    #fundamentos,
+    #elementos,
+    #semantica,
+    #alem {
+        grid-template-columns: 1fr;
+    }
+    footer{
+        display: flex;
+    }
+    footer .lists{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav ul {
+        display: none;
+    }
+    .hall{
+        display: flex;
+    }
+}
