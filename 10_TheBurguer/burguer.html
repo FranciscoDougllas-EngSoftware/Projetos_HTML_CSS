@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBurguer - Hambúrgueres Artesanais</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo">TheBurguer</h1>
+            <nav class="nav-menu">
+                <button class="menu-toggle">☰</button>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#pedido">Pedido</a></li>
+                    <li><a href="#hamburgues">Hambúrgueres</a></li>
+                    <li><a href="#combos">Combos</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="container">
+        <section id="home">
+            <div class="content">
+                <h2>O Mais Saboroso da Cidade</h2>
+                <p>Hambúrgueres feitos com ingredientes frescos e de alta qualidade, para você e sua família.</p>
+            </div>
+            <img src="./images/fundo.png" alt="Hambúrguer" class="hero-image">
+        </section>
+
+        <section id="servicos" class="services">
+            <div class="container">
+                <div class="services-cards">
+                    <div class="card">
+                        <img src="./images/pizza1.jpg" alt="Exclusivo Para Você">
+                        <div class="contents">
+                            <h3>Exclusivo Para Você</h3>
+                            <p>R$ 29,90</p>
+                            <button class="btn" data-item="Exclusivo Para Você" data-price="29,90">Fazer Pedido</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/fundo2.jpg" alt="Novo Cardápio">
+                        <div class="contents">
+                            <h3>Novo Cardápio</h3>
+                            <p>R$ 19,90</p>
+                            <button class="btn" data-item="Novo Cardápio" data-price="19,90">Fazer Pedido</button>
+                        </div>
+                    </div>
+                </div>
+                <h2>Escolha e Aproveite</h2>
+                <p>Comida saudável e saborosa, feita com ingredientes frescos e de alta qualidade.</p>
+                <div class="hambs">
+                    <div class="cards_hambs">
+                        <img src="./images/p1.jpg" alt="Cachorro Quente">
+                        <p>Cachorro Quente</p>
+                    </div>
+                    <div class="cards_hambs">
+                        <img src="./images/p2.jpg" alt="Pizzas">
+                        <p>Pizzas</p>
+                    </div>
+                    <div class="cards_hambs">
+                        <img src="./images/p4.jpg" alt="Rosquinhas">
+                        <p>Rosquinhas</p>
+                    </div>
+                    <div class="cards_hambs">
+                        <img src="./images/p3.jpg" alt="Hambúrguer">
+                        <p>Hambúrguer</p>
+                    </div>
+                    <div class="cards_hambs">
+                        <img src="./images/p2.jpg" alt="Pizzas">
+                        <p>Pizzas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pedido">
+            <div class="pedido-content">
+                <h2>Experimente Nossos Hambúrgueres</h2>
+                <p>Comida saudável e saborosa, feita com ingredientes frescos e de alta qualidade.</p>
+                <button class="btn" data-item="Hambúrguer Genérico" data-price="20,00">Fazer Pedido</button>
+            </div>
+        </section>
+
+        <section id="hamburgues" class="hamburgers">
+            <div class="container">
+                <h2>Hambúrgueres em Destaque</h2>
+                <div class="hamburgues">
+                    <div class="hamb-row">
+                        <div class="hamb">
+                            <img src="./images/h1.jpg" alt="Monte Seu Hambúrguer">
+                            <div class="content-hamb">
+                                <h3>Monte Seu Hambúrguer</h3>
+                                <p>Personalize com seus ingredientes favoritos e crie algo único.</p>
+                                <span>R$ 20,00</span>
+                                <button class="btn" data-item="Monte Seu Hambúrguer" data-price="20,00">Fazer Pedido</button>
+                            </div>
+                        </div>
+                        <div class="hamb">
+                            <img src="./images/h2.jpg" alt="X-Bacon Duplo">
+                            <div class="content-hamb">
+                                <h3>X-Bacon Duplo</h3>
+                                <p>Duas carnes suculentas com bacon crocante e molho especial.</p>
+                                <span>R$ 20,00</span>
+                                <button class="btn" data-item="X-Bacon Duplo" data-price="20,00">Fazer Pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hamb-row">
+                        <div class="hamb">
+                            <img src="./images/h3.jpg" alt="Hambúrguer Clássico">
+                            <div class="content-hamb">
+                                <h3>Hambúrguer Clássico</h3>
+                                <p>O sabor tradicional com um toque artesanal irresistível.</p>
+                                <span>R$ 20,00</span>
+                                <button class="btn" data-item="Hambúrguer Clássico" data-price="20,00">Fazer Pedido</button>
+                            </div>
+                        </div>
+                        <div class="hamb">
+                            <img src="./images/h4.jpg" alt="Combo 4">
+                            <div class="content-hamb">
+                                <h3>Combo 4</h3>
+                                <p>Uma explosão de sabores para os amantes de hambúrguer.</p>
+                                <span>R$ 20,00</span>
+                                <button class="btn" data-item="Combo 4" data-price="20,00">Fazer Pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="combos" class="combos">
+            <div class="container">
+                <h3>Menu Combos</h3>
+                <div class="combos-grid">
+                    <div class="combo">
+                        <p>Hambúrguer + Fritas + Coca <span>R$ 56,00</span></p>
+                        <p>Combinação perfeita para um almoço ou jantar completo.</p>
+                        <button class="btn combo-btn" data-item="Hambúrguer + Fritas + Coca" data-price="56,00">Fazer Pedido</button>
+                    </div>
+                    <div class="combo">
+                        <p>Hambúrguer + Batata Frita <span>R$ 39,90</span></p>
+                        <p>Simples e delicioso, ideal para qualquer momento.</p>
+                        <button class="btn combo-btn" data-item="Hambúrguer + Batata Frita" data-price="39,90">Fazer Pedido</button>
+                    </div>
+                    <div class="combo">
+                        <p>X-Burguer Duplo <span>R$ 49,90</span></p>
+                        <p>Dobro de carne, dobro de satisfação para os famintos.</p>
+                        <button class="btn combo-btn" data-item="X-Burguer Duplo" data-price="49,90">Fazer Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="drinks">
+            <div class="container">
+                <h3>Recomendados Hoje</h3>
+                <p>Bebidas refrescantes para acompanhar seu pedido.</p>
+                <div class="bebidas">
+                    <div class="beb">
+                        <span>R$ 10,00</span>
+                        <img src="./images/coca.png" alt="Coca-Cola">
+                        <p>Coca-Cola</p>
+                        <button class="btn" data-item="Coca-Cola" data-price="10,00">Adicionar ao Pedido</button>
+                    </div>
+                    <div class="beb">
+                        <span>R$ 10,00</span>
+                        <img src="./images/pepsi.png" alt="Pepsi">
+                        <p>Pepsi</p>
+                        <button class="btn" data-item="Pepsi" data-price="10,00">Adicionar ao Pedido</button>
+                    </div>
+                    <div class="beb">
+                        <span>R$ 10,00</span>
+                        <img src="./images/fanta.png" alt="Fanta">
+                        <p>Fanta</p>
+                        <button class="btn" data-item="Fanta" data-price="10,00">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <h3>Venha Nos Visitar</h3>
+                <div class="cont-contato">
+                    <div class="contact-card">
+                        <address>
+                            <p>Avenida 123, 12345-678, Bairro, Cidade</p>
+                            <p>Telefone: (11) 1234-5678</p>
+                            <p>Email: contato@theburguer.com</p>
+                            <p>Horário: 8h00 - 22h00</p>
+                        </address>
+                    </div>
+                    <div class="contact-card">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1986822047093!2d-47.0622834246897!3d-22.90604147925552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c957007710c9%3A0x261aeb9f4312243f!2sMapa%20de%20Campinas!5e0!3m2!1spt-BR!2sbr!4v1741392601992!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 TheBurguer. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Formulário Flutuante -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            <div class="modal-image">
+            </div>
+            <div class="modal-form">
+                <h2>Realizar Pedido</h2>
+                <form id="order-form">
+                    <div class="form-group">
+                        <label for="item-name">Item Selecionado:</label>
+                        <input type="text" id="item-name" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="item-price">Preço:</label>
+                        <input type="text" id="item-price" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-name">Seu Nome:</label>
+                        <input type="text" id="customer-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-phone">Telefone:</label>
+                        <input type="tel" id="customer-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Observações:</label>
+                        <textarea id="notes" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
